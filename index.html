@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="passwordPrompt" class="password-prompt">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <h1>Caffable Marketing Dashboard</h1>
+        <div id="datetime"></div>
+        <div id="entries"></div>
+        <div id="create-buttons">
+            <button class="create-btn" onclick="createEntry(this)">Create Copy</button>
+            <button class="create-btn" onclick="createEntry(this)">Create Copy</button>
+            <button class="create-btn" onclick="createEntry(this)">Create Copy</button>
+            <button class="create-btn" onclick="createEntry(this)">Create Copy</button>
+            <button class="create-btn" onclick="createEntry(this)">Create Copy</button>
+        </div>
+    </div>
+
+    <div class="pinned-links" id="pinned-links">
+        <h2>Pinned Links 🌟</h2>
+        <div id="links"></div>
+    </div>
+
+    <div class="caflogo">
+        <img src="./img/logo.png" alt="Caffable Logo" class="cafimg">
+    </div>
+
+    <footer>
+        By <a href="https://www.roblox.com/users/1583118232/profile" target="_blank">Tomekheart</a> for 
+        <a href="https://discord.gg/FtsJV632K5" target="_blank">Caffable</a>
+        <p class="appeartext">If you can read this you are cool</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

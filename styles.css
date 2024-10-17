@@ -1,0 +1,211 @@
+/* Body and dashboard style */
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto 0; /* Add margin-top for space above the dashboard */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pinned-links {
+    max-width: 800px;
+    margin: 20px auto; /* Center the section */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-aligns the text */
+}
+
+.caflogo {
+    display: flex;               /* Use flexbox for alignment */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 400px;               /* Set the height to 100% of the viewport */
+}
+
+.cafimg {
+    max-width: 100%;            /* Ensure the image is responsive */
+    height: auto;               /* Maintain aspect ratio */
+    margin-top: 20px;           /* Adjust top margin to move the image slightly down */
+}
+
+.link {
+    margin-bottom: 15px; /* Space between links */
+}
+
+/* Adjusted the link styles */
+.link a {
+    color: #007bff; /* Match the link color to the footer */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.link a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center-aligns the text */
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Combine transitions */
+    font-size: 16px; /* Set the font size */
+    margin-top: 20px; /* Space above the footer */
+    padding: 10px; /* Add some padding for better spacing */
+    background-color: #f1f1f1; /* Default background color */
+    color: #333; /* Text color */
+    position: fixed; /* Fix the position to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Position it at the bottom */
+}
+
+/* Change footer background color and transform on hover */
+footer:hover {
+    background-color: #be76ec; /* Change background color on hover */
+    transform: translateY(-50px); /* Move up when hovered */
+}
+
+/* Optional: add a reverse transform when not hovering */
+footer:not(:hover) {
+    transform: translateY(0); /* Return to original position */
+}
+
+footer a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline links on hover for better UX */
+}
+
+.appeartext {
+    color: #f4f4f4;
+    margin: 0; /* Remove margin to align properly */
+    text-align: end;
+}
+
+/* Password prompt styles */
+.password-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it is on top */
+}
+
+.password-prompt h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.password-prompt input {
+    padding: 10px;
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-prompt button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.password-prompt button:hover {
+    background-color: #218838; /* Darken on hover */
+}
+
+/* Entry styling */
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e8e8e8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.entry-text {
+    width: 70%;
+    word-break: break-all;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+#create-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+button.create-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+button.copy-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Animation class for red button */
+.button-animated {
+    background-color: #dc3545 !important;
+}
+
+/* Animation class for returning to original green */
+.button-original {
+    background-color: #28a745 !important;
+}
+
+/* Center-aligned clock styling */
+#datetime {
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size */
+    margin-bottom: 20px; /* Space below the clock */
+}
